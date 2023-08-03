@@ -42,6 +42,11 @@ img {
     display: block
 }
 
+h2, h3, h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
 .header {
     min-height: 201px;
 }
@@ -52,6 +57,17 @@ img {
     padding-left: 15px;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+.img-resize {
+    display: block;
+    position: relative;
+}
+
+.img-resize:before {
+    padding-bottom: 62.5%;
+    content: "";
+    display: block;
 }
 
 /*----------------*/
@@ -237,6 +253,7 @@ p {
     max-width: calc(100% - 120px);
     flex: 1
 }
+
 .footer__left .footer-flex {
     display: flex;
     align-items: flex-start
@@ -476,5 +493,52 @@ p {
     font-weight: 600
 }
 
+.home__focus-flex {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
 
+.home__focus-item {
+    width: calc(100% - 400px);
+    padding-right: 20px;
+}
 
+.home__focus-item .img-resize {
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.img-resize img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.home__focus-item .box-focus-link-title {
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: .02em;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 600;
+    display: block;
+}
+
+.home__focus-item .box-focus-sapo {
+    font-family: Arial, sans-serif ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 130%;
+    color: #444;
+}
