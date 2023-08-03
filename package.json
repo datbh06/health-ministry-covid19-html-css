@@ -1,0 +1,7 @@
+{
+  "name": "health-ministry-covid19-html-css",
+  "version": "1.0.0",
+  "dependencies": {
+    "swiper": "^10.1.0"
+  }
+}
